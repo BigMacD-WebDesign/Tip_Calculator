@@ -1,12 +1,35 @@
 //Calculate Tip
 function calculateTip() {
-    var billAmt = document.getElementById("billamt").value;
-    var serviceQual = docu9ment.getElementById("serviceQual").value;
-    var numOfPeople = document.getElementById("peopleamt").value;
+    let billAmt = document.getElementById("billamt").value;
+    let serviceQual = document.getElementById("serviceQual").value;
+    let numOfPeople = document.getElementById("peopleamt").value;
 
-        //Validate input
-        if (billAmt === "" || serviceQual == 0) {
-            alert("Please enter values");
-            return;
-        }
+    if (billAmt === "" || serviceQual === 0) {
+        alert("Please enter values");
+        return;
+    } 
+
+    if (numOfPeople === "" || numOfPeople <= 1) {
+        numOfPeople = 1;
+        document.getElementById("each").style.display = "none";
+    } else {
+        document.getElementById("each").style.display = "block";
+    }
+
+    let total = (billAmt * serviceQual) / numOfPeople;
+    total = Math.round(total * 100) / 100;
+    total = total.toFixed(2);
+
+    //Display the Tip
+    document.getElementById("totalTip").style.display = "block";
+    document.getElementById("tip").style.display = total;
+
+    console.log(total);
+}
+
+document.getElementById("totalTip").style.display = "none";
+document.getElementById("each").style.display = "none";
+
+document.getElementById("calculate").onclick = function () {
+    calculateTip();
 }
