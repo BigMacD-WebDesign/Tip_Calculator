@@ -22,7 +22,7 @@ function calculateTip() {
 
     //Display the Tip
     document.getElementById("totalTip").style.display = "block";
-    document.getElementById("tip").style.display = total;
+    document.getElementById("tip").innerHTML = total;
 
     console.log(total);
 }
