@@ -4,19 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 
 <body>
     <div id="container">
+        
         <h1> Tip Calculator</h1>
-
-
         <div id="calculator">
             <form>
                 <p>How much was your bill?</p>
-                $<input id="billamt" type="text" placeholder="Bill Amount">
+                <span id="dollarSign">$</span><input id="billamt" type="text" placeholder="Bill Amount">
 
                 <p>How was your service?</p>
                 <select id="serviceQual">
@@ -31,12 +30,12 @@
             </form>
 
             <p>How many people are sharing the bill?</p>
-            <input id="peopleamt" type="text" placeholder="Number of People">People
+            <input id="peopleamt" type="text" placeholder="Number of People"><span id="ppl">People</span>
             <button type="button" id="calculate">Calculate</button>
         </div>
         <div id="totalTip">
             <sup>$</sup><span id="tip">0.00</span>
-            <small id="each">each</small>
+            <small id="each">EACH</small>
         </div>
     </div>
 

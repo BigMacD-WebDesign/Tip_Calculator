@@ -1,0 +1,127 @@
+body {
+    font-family: Arial;
+    background: #0000FF;
+    background: linear-gradient(to left, #0000FF, #ADFF2F);
+}
+
+#container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background: silver;
+    border-radius: 20px;
+    border-end-end-radius: 20px;
+    
+}
+
+h1 {
+    /* background: black; */
+    /* color: white; */
+    margin: 0;
+    text-align: center;
+    padding: 10px 100px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+p {
+    padding-left: 20px;
+}
+
+form input[type="text"] {
+    width: 90px;
+}
+
+input {
+    padding-left: 20px;
+}
+
+#billamt {
+    font-size: 14px;
+    width: 40%;
+    padding: 5px 5px 8px 8px;
+    /* margin-left: 20px; */
+    position: relative;
+    left: 20px;
+}
+
+/* #billamt:focus {
+    border: 3px solid black;
+    outline: none;
+} */
+
+#peopleamt {
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+#dollarSign {
+    display: inline;
+    /* margin-left: 20px; */
+    position: relative;
+    left: 20px;
+}
+
+#serviceQual {
+    padding: 5px 5px px 20px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+}
+
+button:hover {
+    background: #0000FF;
+    color: greenyellow;
+    border-bottom-color: #111;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+#totalTip {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#totalTip:before {
+    content: "Tip Amount";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#totalTip sup {
+    font-size: 20px;
+    top: -18px;
+}
+
+#totalTrip small {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#ppl {
+    position: relative;
+    left: 5px;
+}
